@@ -1,0 +1,196 @@
+// flex columns map
+$flex-columns: (
+  '1': 8.333,
+  '2': 16.6667,
+  '3': 25,
+  '4': 33.3333,
+  '5': 41.6667,
+  '6': 50,
+  '7': 58.3333,
+  '8': 66.6667,
+  '9': 75,
+  '10': 83.3333,
+  '11': 91.6667,
+  '12': 100
+);
+
+$flex-widths: (
+  'sm': 640px,
+  'md': 1024px,
+  'lg': 1140px,
+  'xl': 1380px
+);
+
+$flex-gutter: $spacer-3 / 2;
+
+@mixin mq($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin flex-container($width: 100%) {
+    max-width: $width;
+    padding-right: $flex-gutter * 2;
+    padding-left: $flex-gutter * 2;
+}
+
+@mixin flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: ($flex-gutter / -1);
+    margin-left: ($flex-gutter / -1);
+}
+
+.flex-container {
+    @include flex-container();
+}
+
+.flex-container-center {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@each $key, $value in $flex-widths {
+    .flex-container-#{$key} {
+      max-width: $value;
+    }
+}
+
+.flex-container-collapse {
+  padding: 0;
+}
+
+@mixin flex-item {
+  max-width: 100%;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 0 $flex-gutter;
+  position: relative;
+}
+
+.flex-grid {
+  @include flex-grid;
+
+  &-item {
+    @include flex-item;
+  }
+
+  &-item-last {
+    margin-left: auto;
+  }
+
+  [class^='flex-grid-item'] {     
+    min-width: 0;
+  }
+}
+
+.flex-grid-right {
+  justify-content: flex-end;
+}
+
+%auto-grid-props {
+  width: 100%;
+  position: relative;
+  padding: 0 $flex-gutter;
+}
+
+@each $bp-name, $bp-size in $breakpoints {
+  .flex-grid-item-#{$bp-name} {
+    @extend %auto-grid-props;
+  }
+}
+
+@each $bp-name, $bp-size in $breakpoints {
+  @include mq($bp-size) {
+    .flex-grid-item-#{$bp-name} {
+      max-width: 100%;
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+}
+
+%item-properties {
+  position: relative;
+  padding: 0 $flex-gutter;
+  width: 100%;
+}
+
+@each $columns, $width in $flex-columns {
+  .flex-grid-item-#{$columns} {
+    flex-basis: $width * 1%;
+    max-width: $width * 1%;
+
+    @extend %item-properties;
+  }
+}
+
+@each $bp-name, $bp-size in $breakpoints {
+  @each $columns, $width in $flex-columns {
+    .flex-grid-item-#{$columns}-#{$bp-name} {
+      @extend %item-properties;
+    }
+  }
+}
+
+@each $bp-name, $bp-size in $breakpoints {
+  @if $bp-name == 'sm' {
+    @each $columns, $width in $flex-columns {
+      .flex-grid-item-#{$columns}-sm {
+        flex-basis: $width * 1%;
+        max-width: $width * 1%;
+      }
+    }
+  } @else {
+    @include mq($bp-size) {
+      @each $columns, $width in $flex-columns {
+        .flex-grid-item-#{$columns}-#{$bp-name} {
+          flex-basis: $width * 1%;
+          max-width: $width * 1%;
+        }
+      }
+    }
+  }
+}
+
+@each $columns, $width in $flex-columns {
+  .flex-grid-item-push-#{$columns} {
+    left: $width * 1%;
+  }
+}
+
+@each $columns, $width in $flex-columns {
+  .flex-grid-item-pull-#{$columns} {
+    right: $width * 1%;
+  }
+}
+
+@each $bp-name, $bp-size in $breakpoints {
+  @if $bp-name == 'sm' {
+    @each $columns, $width in $flex-columns {
+      .flex-grid-item-push-#{$columns}-#{$bp-name} {
+        left: $width * 1%;
+      }
+    }
+
+    @each $columns, $width in $flex-columns {
+      .flex-grid-item-pull-#{$columns}-#{$bp-name} {
+        right: $width * 1%;
+      }
+    }
+  } @else {
+    @include mq($bp-size) {
+      @each $columns, $width in $flex-columns {
+        .flex-grid-item-push-#{$columns}-#{$bp-name} {
+          left: $width * 1%;
+        }
+      }
+      @each $columns, $width in $flex-columns {
+        .flex-grid-item-pull-#{$columns}-#{$bp-name} {
+          right: $width * 1%;
+        }
+      }
+    }
+  }
+}

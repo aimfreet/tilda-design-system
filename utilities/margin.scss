@@ -1,0 +1,171 @@
+.margin {
+    margin: $spacer-3 !important; //default base margin
+
+    // Uniform Margins
+    &-0{
+        margin: $spacer-0 !important; //0px
+    }
+    &-1{
+        margin: $spacer-1 !important; //4px
+    }
+    &-2{
+        margin: $spacer-2 !important; //8px
+    }
+    &-3{
+        margin: $spacer-3 !important; //16px
+    }
+    &-4{
+        margin: $spacer-4 !important; //24px
+    }
+    &-5{
+        margin: $spacer-5 !important; //32px
+    }
+    &-6{
+        margin: $spacer-6 !important; //40px
+    }
+
+    // Directional Margins
+    // Top Margins
+    &-top {
+        margin-top: $spacer-3 !important; //default base margin-top
+        &-0{
+            margin-top: $spacer-0 !important; //0px
+        }
+        &-1{
+            margin-top: $spacer-1 !important; //4px
+        }
+        &-2{
+            margin-top: $spacer-2 !important; //8px
+        }
+        &-3{
+            margin-top: $spacer-3 !important; //16px
+        }
+        &-4{
+            margin-top: $spacer-4 !important; //24px
+        }
+        &-5{
+            margin-top: $spacer-5 !important; //32px
+        }
+        &-6{
+            margin-top: $spacer-6 !important; //40px
+        } 
+    }
+    &-right {
+        margin-right: $spacer-3 !important; //default base margin-right
+        &-0{
+            margin-right: $spacer-0 !important; //0px
+        }
+        &-1{
+            margin-right: $spacer-1 !important; //4px
+        }
+        &-2{
+            margin-right: $spacer-2 !important; //8px
+        }
+        &-3{
+            margin-right: $spacer-3 !important; //16px
+        }
+        &-4{
+            margin-right: $spacer-4 !important; //24px
+        }
+        &-5{
+            margin-right: $spacer-5 !important; //32px
+        }
+        &-6{
+            margin-right: $spacer-6 !important; //40px
+        } 
+    }
+    &-bottom {
+        margin-bottom: $spacer-3 !important; //default base margin-bottom
+        &-0{
+            margin-bottom: $spacer-0 !important; //0px
+        }
+        &-1{
+            margin-bottom: $spacer-1 !important; //4px
+        }
+        &-2{
+            margin-bottom: $spacer-2 !important; //8px
+        }
+        &-3{
+            margin-bottom: $spacer-3 !important; //16px
+        }
+        &-4{
+            margin-bottom: $spacer-4 !important; //24px
+        }
+        &-5{
+            margin-bottom: $spacer-5 !important; //32px
+        }
+        &-6{
+            margin-bottom: $spacer-6 !important; //40px
+        } 
+    }
+    &-left {
+        margin-left: $spacer-3 !important; //default base margin-left
+        &-0{
+            margin-left: $spacer-0 !important; //0px
+        }
+        &-1{
+            margin-left: $spacer-1 !important; //4px
+        }
+        &-2{
+            margin-left: $spacer-2 !important; //8px
+        }
+        &-3{
+            margin-left: $spacer-3 !important; //16px
+        }
+        &-4{
+            margin-left: $spacer-4 !important; //24px
+        }
+        &-5{
+            margin-left: $spacer-5 !important; //32px
+        }
+        &-6{
+            margin-left: $spacer-6 !important; //40px
+        } 
+    }
+    &-x {
+        margin: 0 $spacer-3 !important; //default base margins left and right
+        &-1{
+            margin: 0 $spacer-1 !important; //4px
+        }
+        &-2{
+            margin: 0 $spacer-2 !important; //8px
+        }
+        &-3{
+            margin: 0 $spacer-3 !important; //16px
+        }
+        &-4{
+            margin: 0 $spacer-4 !important; //24px
+        }
+        &-5{
+            margin: 0 $spacer-5 !important; //32px
+        }
+        &-6{
+            margin: 0 $spacer-6 !important; //40px
+        }
+        &-auto {
+            margin: 0 auto !important;
+        }
+    }
+    &-y {
+        margin: $spacer-3 0 !important; //default base top and bottom
+        &-1{
+            margin: $spacer-1 0 !important; //4px
+        }
+        &-2{
+            margin: $spacer-2 0 !important; //8px
+        }
+        &-3{
+            margin: $spacer-3 0 !important; //16px
+        }
+        &-4{
+            margin: $spacer-4 0 !important; //24px
+        }
+        &-5{
+            margin: $spacer-5 0 !important; //32px
+        }
+        &-6{
+            margin: $spacer-6 0 !important; //40px
+        }
+    }
+}
+

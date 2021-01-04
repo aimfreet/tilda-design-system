@@ -1,0 +1,28 @@
+@import "./color-system.scss";
+
+//TYPOGRAPHY
+$text-black:        $black !default;
+$text-white:        $white !default;
+$text-teal:         $secondary !default;
+$text-gray-dark:    $gray-100 !default;
+$text-gray-light:   $gray-80 !default;
+$text-gray:         $gray-100 !default;
+
+// Border colors
+$border-white:       $white !default;
+$border-black:  $black !default;
+$border-gray-dark:   $gray-80 !default;
+$border-gray-medium: $gray-60 !default;
+$border-gray-light:  $gray-30 !default;
+$border-gray:        $gray-50 !default;
+
+
+// Background colors
+$bg-white:          $white !default;
+$bg-black:          $black !default;
+$bg-teal-light:     $teal-30 !default;
+$bg-teal:           $teal-60 !default;
+$bg-gray-dark:      $gray-60 !default;
+$bg-gray-light:     $gray-10 !default;
+$bg-gray:           $gray-40 !default;
+

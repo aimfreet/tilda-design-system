@@ -1,0 +1,65 @@
+@mixin h1 {
+    font-size: $h1-size-mobile;
+    font-weight: $font-weight-bold;
+    letter-spacing: .03rem;
+    line-height: $h1-line-height-mobile;
+    margin-bottom: $spacer-5;
+    @include breakpoint(md) {
+      font-size: $h1-size;
+      line-height: $h1-line-height-desktop;
+    }
+  }
+  
+  @mixin h2 {
+    font-size: $h2-size-mobile;
+    font-weight: $font-weight-normal;
+    line-height: $h2-line-height-mobile;
+    margin-bottom: $spacer-4;
+    @include breakpoint(md) {
+      font-size: $h2-size;
+      line-height: $h2-line-height-desktop;
+    }
+  }
+    
+    @mixin h3 {
+      font-size: $h3-size-mobile;
+      font-weight: $font-weight-normal;
+      line-height: $h3-line-height-mobile;
+      margin-bottom: $spacer-3;
+      @include breakpoint(md) {
+        font-size: $h3-size;
+        line-height: $h3-line-height-desktop;
+      }
+    }
+    
+    @mixin h4 {
+      font-size: $h4-size;
+      font-weight: $font-weight-normal;
+      line-height: $h4-line-height;
+      margin-bottom: $spacer-3;
+    }
+    
+    @mixin h5 {
+      font-size: $h5-size;
+      font-weight: $font-weight-normal;
+      line-height: $h5-line-height;
+      margin-bottom: $spacer-2;
+    }
+    
+    @mixin h6 {
+      font-size: $h6-size;
+      font-weight: $font-weight-normal;
+      line-height: $h6-line-height;
+      margin-bottom: $spacer-2;
+    }
+  
+    @mixin heading-link {
+      color: $primary;
+      text-decoration: underline;
+      transition: all 0.25s;
+      &:hover,
+      &:active {
+        text-decoration: none;
+        color: $secondary;
+      }
+    }

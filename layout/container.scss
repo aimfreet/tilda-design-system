@@ -1,0 +1,56 @@
+// Fixed-width, centered column for site content.
+// Handy container styles that match our breakpoints
+
+// 544px
+.container-sm {
+    width: 100%;
+    @include container;
+    max-width: $width-sm;
+  }
+  
+  // 768px
+  .container-md {
+    width: 100%;
+    @include container;
+    max-width: $container-md;
+  }
+  
+  // 1004px - this matches the current fixed width: 980px + padding: px-3
+  .container-lg {
+    width: 100%;
+    @include container;
+    max-width: $container-lg;
+  }
+  
+  // 1280px
+  .container-xl {
+    width: 100%;
+    @include container;
+    max-width: $container-xl;
+  }
+  //1366px
+  .container-xxl {
+    width: 100%;
+    @include container;
+    max-width: $container-xxl;
+  }
+
+/*.container {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding:  0 $spacer-5;
+    @include clearfix;
+    @include breakpoint(lg) {
+      width: $container-lg;
+    }
+    @include breakpoint(xl) {
+      width: $container-xl;
+    }
+  }*/
+  
+  .row {
+    @include clearfix;
+  }

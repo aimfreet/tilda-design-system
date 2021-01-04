@@ -1,0 +1,130 @@
+// Default Border
+
+.border {
+    border: $border;
+    &-0 { border: $border-0; }
+    &-1 { border: $border-1; }
+    &-2 { border: $border-2; }
+    &-3 { border: $border-3; }
+    &-4 { border: $border-4; }
+    &-5 { border: $border-5; }
+    &-6 { border: $border-6; }
+}
+
+// Directional Border
+.border {
+    &-top {
+        border-top: $border;
+        &-0 { border-top: $border-0; }
+        &-1 { border-top: $border-1; }
+        &-2 { border-top: $border-2; }
+        &-3 { border-top: $border-3; }
+        &-4 { border-top: $border-4; }
+        &-5 { border-top: $border-5; }
+        &-6 { border-top: $border-6; }
+    }
+    &-left {
+        border-left: $border;
+        &-0 { border-left: $border-0; }
+        &-1 { border-left: $border-1; }
+        &-2 { border-left: $border-2; }
+        &-3 { border-left: $border-3; }
+        &-4 { border-left: $border-4; }
+        &-5 { border-left: $border-5; }
+        &-6 { border-left: $border-6; }
+    }
+    &-bottom {
+        border-bottom: $border;
+        &-0 { border-bottom: $border-0; }
+        &-1 { border-bottom: $border-1; }
+        &-2 { border-bottom: $border-2; }
+        &-3 { border-bottom: $border-3; }
+        &-4 { border-bottom: $border-4; }
+        &-5 { border-bottom: $border-5; }
+        &-6 { border-bottom: $border-6; }
+    }
+    &-right {
+        border-right: $border;
+        &-0 { border-right: $border-0; }
+        &-1 { border-right: $border-1; }
+        &-2 { border-right: $border-2; }
+        &-3 { border-right: $border-3; }
+        &-4 { border-right: $border-4; }
+        &-5 { border-right: $border-5; }
+        &-6 { border-right: $border-6; }
+    }
+    &-x {
+        border-right: $border;
+        border-left: $border;
+        &-0 { 
+            border-right: $border-0; 
+            border-left: $border-0;
+        }
+        &-1 { 
+            border-right: $border-1;
+            border-left: $border-1;
+        }
+        &-2 { 
+            border-right: $border-2;
+            border-left: $border-2;
+        }
+        &-3 { 
+            border-right: $border-3;
+            border-left: $border-3;
+        }
+        &-4 { 
+            border-right: $border-4;
+            border-left: $border-4;
+        }
+        &-5 { 
+            border-right: $border-5;
+            border-left: $border-5;
+        }
+        &-6 { 
+            border-right: $border-6;
+            border-left: $border-6;
+        }
+    }
+    &-y {
+        border-top: $border;
+        border-bottom: $border;
+        &-0 { 
+            border-top: $border-0; 
+            border-bottom: $border-0;
+        }
+        &-1 { 
+            border-top: $border-1;
+            border-bottom: $border-1;
+        }
+        &-2 { 
+            border-top: $border-2;
+            border-bottom: $border-2;
+        }
+        &-3 { 
+            border-top: $border-3;
+            border-bottom: $border-3;
+        }
+        &-4 { 
+            border-top: $border-4;
+            border-bottom: $border-4;
+        }
+        &-5 { 
+            border-top: $border-5;
+            border-bottom: $border-5;
+        }
+        &-6 { 
+            border-top: $border-6;
+            border-bottom: $border-6;
+        }
+    }
+}
+
+//Border Colors Utilites
+.border-black { border-color: $black }
+.border-white { border-color: $white }
+
+//Border Radius
+.rounded-0 { border-radius: 0; }
+.rounded-1 { border-radius: $border-radius; }
+.rounded-2 { border-radius: $border-radius * 2; }
+.circle { border-radius: 50%; }

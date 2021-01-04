@@ -1,0 +1,136 @@
+// Headings
+// --------------------------------------------------
+// stylelint-disable selector-max-type
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  & > a {
+    @include heading-link;
+  }
+}
+
+h1 { @include h1; }
+h2 { @include h2; }
+h3 { @include h3; }
+h4 { @include h4; }
+h5 { @include h5; }
+h6 { @include h6; }
+
+ul + h2,
+ul + h3 {
+  padding-top: $spacer-2;
+}
+
+p + h2,
+p + h3 {
+  padding-top: $spacer-2;
+}
+
+
+// Body text
+// --------------------------------------------------
+
+p {
+  margin-top: 0;
+  font-size: $body-font-size;
+  line-height: $body-font-size * $lh-default;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include breakpoint(md){
+    font-size: $body-font-size-desktop;
+    line-height: $body-font-size-desktop * $lh-default;
+  }
+}
+
+
+
+small {
+  // stylelint-disable-next-line primer/typography
+  font-size: 90%;
+}
+
+
+blockquote {
+  margin: 0;
+  padding-left: $spacer-3;
+  border-left: 6px solid $teal-60;
+  font-size: $text-size-9;
+  font-family: $font-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  > span {
+    display: block;
+    font-family: $font-sans;
+    line-height: 2rem;
+    &::before {
+      content: "\2014";
+    }
+  }
+}
+
+// Lists
+// --------------------------------------------------
+
+ul,
+ol {
+  padding-left: 2.25rem;
+  margin-top: $spacer-3;
+  margin-bottom: $spacer-3;
+  list-style-position: outside;
+  font-size: $body-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include breakpoint(md){
+    font-size: $body-font-size-desktop;
+  }
+  & > li {
+    margin-bottom: .75rem;
+  }
+}
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+  list-style-type: lower-alpha;
+}
+ul {
+  list-style-type: square;
+}
+
+
+dd {
+  margin-left: 0;
+}
+
+// Code
+// --------------------------------------------------
+
+tt,
+code {
+  font-family: $mono-font;
+  font-size: $text-size-10;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $mono-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $text-size-10;
+}
