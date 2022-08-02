@@ -4,9 +4,12 @@
     "description": "Tilda Design System",
     "main": "index.js",
     "repository": {
-      "type": "git",
-      "url": "https://github.com/aimfreet/tilda-design-system.git"
+        "type": "git",
+        "url": "https://github.com/aimfreet/tilda-design-system.git"
     },
     "author": "Aimee Maroney",
-    "license": "MIT"
+    "license": "MIT",
+    "devDependencies": {
+        "sass": "^1.54.0"
+    }
 }
