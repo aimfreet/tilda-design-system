@@ -1,0 +1,15 @@
+$background-colors: (
+  'black': --black,
+  'gray': --tds-gray,
+  'gray-10': --tds-gray-10,
+  'gray-20': --tds-gray-20,
+  'gray-30': --tds-gray-30,
+  'gray-40': --tds-gray-40,
+  'gray-50': --tds-gray-50,
+);
+
+@each $name, $color in $background-colors {
+    .background-#{$name} {
+      background-color: var($color);
+    }
+}

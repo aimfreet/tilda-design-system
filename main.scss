@@ -1,3 +1,5 @@
 @charset "utf-8";
 
-@import "./variables/index.scss";
+@import "./variables/index.scss",
+"./base/index.scss",
+"./utilities/index.scss";
