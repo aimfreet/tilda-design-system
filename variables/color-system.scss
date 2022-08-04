@@ -44,4 +44,16 @@
    --red-l: 50%;
 
    --tds-red: hsl(var(--red-h), var(--red-s), var(--red-l));
+
+   //Yellow
+   --yellow-h: 40;
+   --yellow-s: 100%;
+   --yellow-l: 50%;
+
+   --tds-yellow: hsl(var(--yellow-h), var(--yellow-s), var(--yellow-l));
+
+   --primary: var(--tds-teal);
+   --secondary: var(--tds-red);
+   --tertiary: var(--tds-yellow);
+   --quaternary: var(--tds-gray);
 }
