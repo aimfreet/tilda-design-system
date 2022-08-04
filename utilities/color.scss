@@ -1,11 +1,26 @@
 $background-colors: (
   'black': --black,
+  'white': --white,
   'gray': --tds-gray,
   'gray-10': --tds-gray-10,
   'gray-20': --tds-gray-20,
   'gray-30': --tds-gray-30,
   'gray-40': --tds-gray-40,
   'gray-50': --tds-gray-50,
+  'gray-60': --tds-gray-60,
+  'gray-70': --tds-gray-70,
+  'gray-80': --tds-gray-80,
+  'gray-90': --tds-gray-90,
+  'gray-100': --tds-gray-100,
+  'gray-110': --tds-gray-110,
+  'gray-120': --tds-gray-120,
+  'gray-130': --tds-gray-130,
+  'gray-140': --tds-gray-140,
+  'gray-150': --tds-gray-150,
+  'gray-160': --tds-gray-160,
+  'gray-170': --tds-gray-170,
+  'gray-180': --tds-gray-180,
+  'gray-190': --tds-gray-190,
 );
 
 @each $name, $color in $background-colors {

@@ -10,11 +10,38 @@
     --black: hsl(var(--black-h), var(--black-s), var(--black-l));
 
     //Gray
-   
    --tds-gray: hsl(var(--black-h), var(--black-s), 85%);
    --tds-gray-10: hsl(var(--black-h), var(--black-s), 98%);
    --tds-gray-20: hsl(var(--black-h), var(--black-s), 97%);
    --tds-gray-30: hsl(var(--black-h), var(--black-s), 96%);
    --tds-gray-40: hsl(var(--black-h), var(--black-s), 94%);
    --tds-gray-50: hsl(var(--black-h), var(--black-s), 93%);
+   --tds-gray-60: hsl(var(--black-h), var(--black-s), 91%);
+   --tds-gray-70: hsl(var(--black-h), var(--black-s), 89%);
+   --tds-gray-80: hsl(var(--black-h), var(--black-s), 88%);
+   --tds-gray-90: hsl(var(--black-h), var(--black-s), 87%);
+   --tds-gray-100: var(--tds-gray)
+   --tds-gray-110: hsl(var(--black-h), var(--black-s), 76%);
+   --tds-gray-120: hsl(var(--black-h), var(--black-s), 68%);
+   --tds-gray-130: hsl(var(--black-h), var(--black-s), 60%);
+   --tds-gray-140: hsl(var(--black-h), var(--black-s), 51%);
+   --tds-gray-150: hsl(var(--black-h), var(--black-s), 43%);
+   --tds-gray-160: hsl(var(--black-h), var(--black-s), 34%);
+   --tds-gray-170: hsl(var(--black-h), var(--black-s), 25%);
+   --tds-gray-180: hsl(var(--black-h), var(--black-s), 17%);
+   --tds-gray-190: hsl(var(--black-h), var(--black-s), 9%);
+
+   //Teal
+   --teal-h: 183;
+   --teal-s: 96%;
+   --teal-l: 33%;
+
+   --tds-teal: hsl(var(--teal-h), var(--teal-s), var(--teal-l));
+   
+   //Red
+   --red-h: 0;
+   --red-s: 100%;
+   --red-l: 50%;
+
+   --tds-red: hsl(var(--red-h), var(--red-s), var(--red-l));
 }
