@@ -1,4 +1,9 @@
 :root {
     --text-black: var(--black);
     --text-white: var(--white);
+    --text-gray: var(--gray-140);
+
+    --body-font-color: var(--text-black);
+    --border-color-primary: var(--black);
+    --border-color-secondary: var(--white);
 }
