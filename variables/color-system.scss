@@ -52,8 +52,32 @@
 
    --tds-yellow: hsl(var(--yellow-h), var(--yellow-s), var(--yellow-l));
 
-   --primary: var(--tds-teal);
-   --secondary: var(--tds-red);
+   //Orange
+   --orange-h: 32;
+   --orange-s: 100%;
+   --orange-l: 50%;
+
+    //Primary
+   --primary-h: var(--teal-h);
+   --primary-s: var(--teal-s);
+   --primary-l: var(--teal-l);
+
+   --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+
+   //Secondary
+   --secondary-h: var(--red-h);
+   --secondary-s: var(--red-s);
+   --secondary-l: var(--red-l);
+
+   --secondary: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l));
+
+   //Tertiary
+   --tertiary-h: var(--yellow-h);
+   --tertiary-s: var(--yellow-s);
+   --tertiary-l: var(--yellow-l);
+
+
+   
    --tertiary: var(--tds-yellow);
    --quaternary: var(--tds-gray);
 }
