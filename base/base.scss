@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html, body {
+    height: 100%;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  body {
+    font-family: var(--body-font);
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--text-black);
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+  }
