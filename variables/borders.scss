@@ -1,0 +1,18 @@
+:root {
+    --border-style: solid;
+    --border-color: var(--black);
+
+    //border-widths
+    --border-width-0: 0;
+    --border-width-1: 1px;
+    --border-width-2: 2px;
+    --border-width-3: 3px;
+    --border-width-4: 4px;
+    --border-width-5: 5px;
+    --border-width-6: 6px;
+
+    // Default width
+    --border-width: var(--border-width-5);
+
+    --border-default: var(--border-width) var(--border-style) var(--border-color);
+}

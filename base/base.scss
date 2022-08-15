@@ -27,3 +27,77 @@
     -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
   }
+
+  a {
+    color: var(--text-black);
+    text-decoration: underline;
+  
+    &:hover {
+      text-decoration: none;
+      color: var(--text-red);
+    }
+    &:active {
+    }
+    &:focus {
+    }
+  }
+
+  b,
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
+
+  // Horizontal lines
+  hr,
+  .rule {
+    height: 0;
+    // stylelint-disable-next-line primer/spacing
+    margin: 15px 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    // stylelint-disable-next-line primer/borders
+    border-bottom: var(--border-width-1) var(--border-style) var(--border-color);
+    @include clearfix();
+  }
+  
+  //
+  // Remove most spacing between table cells.
+  //
+  
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+  td,
+  th {
+    padding: 0;
+  }
+  
+  button {
+    cursor: pointer;
+    // Remove border radius added by Chrome macOS
+    border-radius: 0;
+  }
+  
+  // increase the selector specificity for [hidden]
+  // so that it always overrides utility classes (.d-block, etc.)
+  [hidden][hidden] {
+    display: none !important;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+  
+  details {
+    summary { cursor: pointer; }
+  
+    &:not([open]) {
+      // Set details content hidden by default for browsers that don't do this
+      > *:not(summary) { display: none !important; }
+    }
+  }

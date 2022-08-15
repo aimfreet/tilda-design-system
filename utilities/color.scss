@@ -28,9 +28,11 @@ $background-colors: (
 );
 
 $text-colors: (
-  'black': --text-black,
-  'white': --text-white,
-  'gray': --text-gray,
+  'black': --black,
+  'white': --white,
+  'gray': --gray,
+  'teal':--primary,
+  'red': --secondary,
 );
 
 @each $name, $color in $background-colors {
