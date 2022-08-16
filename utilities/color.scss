@@ -33,6 +33,8 @@ $text-colors: (
   'gray': --gray,
   'teal':--primary,
   'red': --secondary,
+  'yellow': --tertiary,
+  'orange': --quaternary,
 );
 
 @each $name, $color in $background-colors {

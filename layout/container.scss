@@ -1,0 +1,44 @@
+// Max-width, centered column for site content.
+// Handy container styles that match our breakpoints
+
+// 544px
+.container-sm {
+    width: 100%;
+    @include container;
+    max-width: var(--container-sm);
+  }
+  
+  // 768px
+.container-md {
+    width: 100%;
+    @include container;
+    max-width: var(--container-md);
+}
+
+// 1024px 
+.container-lg {
+    width: 100%;
+    @include container;
+    max-width: var(--container-lg);
+}
+  
+// 1280px
+.container-xl {
+    width: 100%;
+    @include container;
+    max-width: var(--container-xl);
+}
+
+//1366px
+.container-xxl {
+    width: 100%;
+    @include container;
+    max-width: var(--container-xxl);
+}
+
+//1920px
+.container-xxxl {
+    width: 100%;
+    @include container;
+    max-width: var(--container-xxxl);
+}

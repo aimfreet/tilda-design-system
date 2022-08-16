@@ -1,12 +1,14 @@
 :root {
-    --body-font: "Brandon Grotesque Regular", Helvetica, sans-serif;
+    
+    --body-font: 'Roboto', sans-serif;
+    --heading-font: "Brandon Grotesque Black", Helvetica, sans-serif;
 
     --font-weight-regular: 400;
     --font-weight-bold: 700;
-    --font-weight-medium: "Brandon Grotesque Medium", Helvetica, sans-serif;
-    --font-weight-black: "Brandon Grotesque Black", Helvetica, sans-serif;
+    --font-weight-medium: 500;
+    --font-weight-black: 900;
 
-    --body-font-size: 1.25rem;
+    --body-font-size: 1.1 25rem;
     --body-line-height: 1.75rem;
 
 }

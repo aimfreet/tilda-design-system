@@ -1,0 +1,105 @@
+@use "sass:math";
+
+// Layout variables
+
+// these are values for the display CSS property
+$display-values: (
+  block,
+  flex,
+  inline,
+  inline-block,
+  inline-flex,
+  none,
+  table,
+  table-row,
+  table-cell
+) !default;
+
+// maps edges to respective corners for border-radius
+$edges: (
+  top: (top-left, top-right),
+  right: (top-right, bottom-right),
+  bottom: (bottom-right, bottom-left),
+  left: (bottom-left, top-left)
+) !default;
+
+// These are our margin and padding utility spacers. The default step size we
+// use is 8px.
+
+:root {
+    //spacing variables for margins and padding
+
+    --spacer: .5rem; //8px
+
+    --spacer-0: 0; //0px
+    --spacer-4: calc(var(--spacer) / 2); //4px
+    --spacer-8: var(--spacer); //8px
+    --spacer-16: var(--spacer) * 2; //16px
+    --spacer-24: var(--spacer) * 3; //24px
+    --spacer-32: var(--spacer) * 4; //32px
+    --spacer-40: var(--spacer) * 5; //40px
+    --spacer-48: var(--spacer) * 6; //48px
+    --spacer-56: var(--spacer) * 7; //56px
+    --spacer-64: var(--spacer) * 8; //64px
+    --spacer-72: var(--spacer) * 9; //72px
+    --spacer-80: var(--spacer) * 10; //80px
+
+    // Breakpoint widths
+    --width-xs: 0;
+    --width-sm: 544px;
+    --width-md: 768px;
+    --width-lg: 1024px;
+    --width-xl: 1280px;
+    --width-xxl: 1366px;
+    --width-xxxl: 1640px;
+
+   // Responsive container widths
+    --container-sm: var(--width-sm);
+    --container-md: var(--width-md);
+    --container-lg: var(--width-lg);
+    --container-xl: var(--container-xl);
+    --container-xxl: var(--container-xxl);
+    --container-xxxl: var(--container-xxxl);
+}
+
+
+// Breakpoints in the form (name: length)
+$breakpoints: (
+  xs: var(--width-xs),
+  sm: var(--width-sm),
+  md: var(--width-md),
+  lg: var(--width-lg),
+  xl: var(--width-xl),
+  xxl: var(--width-xxl),
+  xxxl: var(--width-xxxl),
+) !default;
+
+// This map in the form (breakpoint: variant) is used to iterate over
+// breakpoints and create both responsive and non-responsive classes in one
+// loop:
+//
+// ```scss
+// @each $breakpoint, $variant of $responsive-variants {
+//   @include breakpoint($breakpoint) {
+//     .foo#{$variant}-bar { foo: bar !important; }
+//   }
+// }
+// ```
+$responsive-variants: (
+  "": "",
+  sm: "-sm",
+  md: "-md",
+  lg: "-lg",
+  xl: "-xl",
+  xxl: "-xxl",
+  xxxl: "-xxxl",
+) !default;
+
+// responive utility position values
+$responsive-positions: (
+  static,
+  relative,
+  absolute,
+  fixed,
+  sticky
+) !default;
