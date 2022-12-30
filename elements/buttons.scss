@@ -1,0 +1,14 @@
+.button {
+    display: flex;
+    align-items: center;
+    background-color: var(--gray);
+    color: var(--black);
+    font-weight: 700;
+    justify-content: space-between;
+    padding: $button-padding-mobile;
+    @include button-border-default;
+
+    @include breakpoint(md) {
+        padding: $button-padding-default;
+    }
+}

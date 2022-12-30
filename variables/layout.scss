@@ -26,53 +26,43 @@ $edges: (
 // These are our margin and padding utility spacers. The default step size we
 // use is 8px.
 
-:root {
-    //spacing variables for margins and padding
+//spacing variables for margins and padding
 
-    --spacer: .5rem; //8px
+$spacer: .5rem; //8px
 
-    --spacer-0: 0; //0px
-    --spacer-4: calc(var(--spacer) / 2); //4px
-    --spacer-8: var(--spacer); //8px
-    --spacer-16: var(--spacer) * 2; //16px
-    --spacer-24: var(--spacer) * 3; //24px
-    --spacer-32: var(--spacer) * 4; //32px
-    --spacer-40: var(--spacer) * 5; //40px
-    --spacer-48: var(--spacer) * 6; //48px
-    --spacer-56: var(--spacer) * 7; //56px
-    --spacer-64: var(--spacer) * 8; //64px
-    --spacer-72: var(--spacer) * 9; //72px
-    --spacer-80: var(--spacer) * 10; //80px
+$spacer-0: 0; //0px
+$spacer-4: calc($spacer / 2); //4px
+$spacer-8: $spacer; //8px
+$spacer-16: $spacer * 2; //16px
+$spacer-24: $spacer * 3; //24px
+$spacer-32: $spacer * 4; //32px
+$spacer-40: $spacer * 5; //40px
+$spacer-48: $spacer * 6; //48px
+$spacer-56: $spacer * 7; //56px
+$spacer-64: $spacer * 8; //64px
+$spacer-72: $spacer * 9; //72px
+$spacer-80: $spacer * 10; //80px
 
-    // Breakpoint widths
-    --width-xs: 0;
-    --width-sm: 544px;
-    --width-md: 768px;
-    --width-lg: 1024px;
-    --width-xl: 1280px;
-    --width-xxl: 1366px;
-    --width-xxxl: 1640px;
-
-   // Responsive container widths
-    --container-sm: var(--width-sm);
-    --container-md: var(--width-md);
-    --container-lg: var(--width-lg);
-    --container-xl: var(--container-xl);
-    --container-xxl: var(--container-xxl);
-    --container-xxxl: var(--container-xxxl);
-}
-
+// Breakpoint widths
+$width-xs: 0;
+$width-sm: 544px;
+$width-md: 768px;
+$width-lg: 1024px;
+$width-xl: 1280px;
+$width-xxl: 1366px;
+$width-xxxl: 1640px;
 
 // Breakpoints in the form (name: length)
 $breakpoints: (
-  xs: var(--width-xs),
-  sm: var(--width-sm),
-  md: var(--width-md),
-  lg: var(--width-lg),
-  xl: var(--width-xl),
-  xxl: var(--width-xxl),
-  xxxl: var(--width-xxxl),
+  xs: $width-xs,
+  sm: $width-sm,
+  md: $width-md,
+  lg: $width-lg,
+  xl: $width-xl,
+  xxl: $width-xxl,
+  xxxl: $width-xxxl,
 ) !default;
+
 
 // This map in the form (breakpoint: variant) is used to iterate over
 // breakpoints and create both responsive and non-responsive classes in one
@@ -103,3 +93,13 @@ $responsive-positions: (
   fixed,
   sticky
 ) !default;
+
+:root {
+  // Responsive container widths
+   --container-sm: var(--width-sm);
+   --container-md: var(--width-md);
+   --container-lg: var(--width-lg);
+   --container-xl: var(--container-xl);
+   --container-xxl: var(--container-xxl);
+   --container-xxxl: var(--container-xxxl);
+}

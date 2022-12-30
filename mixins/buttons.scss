@@ -1,0 +1,10 @@
+@mixin button-border-reset {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+@mixin button-border-default {
+    @include button-border-reset;
+    border-bottom: 4px solid var(--gray-130);
+}
