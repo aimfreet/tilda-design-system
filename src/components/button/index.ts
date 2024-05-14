@@ -1,0 +1,1 @@
+export { TdsButton } from './tds-button';

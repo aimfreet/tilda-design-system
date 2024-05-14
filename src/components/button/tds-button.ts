@@ -12,12 +12,12 @@ export class TdsButton extends LitElement {
     @property({ type: Boolean, attribute: "button-disabled" })
     disabled = false;
     
-    @property({ type: String })
-        label = ''
 
     render() {
         return html`
-            <button class="btn ${this.color}" ?disabled="${this.disabled}">${this.label}</button>
+            <button class="btn ${this.color}" ?disabled="${this.disabled}">
+                <slot></slot>
+            </button>
         `
     }
 
@@ -60,4 +60,10 @@ export class TdsButton extends LitElement {
           `
         ];
       }
+}
+
+declare global {
+  interface HTMLElementTagNameMap {
+    'tds-button': TdsButton;
+  }
 }
