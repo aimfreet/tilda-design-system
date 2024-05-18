@@ -1,8 +1,6 @@
-module.exports = {
-  syntax: 'postcss-lit',
-  plugins: {
-    tailwindcss: {
-      config: './tailwind.config.cjs'
-    }
+export const syntax = 'postcss-lit';
+export const plugins = {
+  tailwindcss: {
+    config: './tailwind.config.cjs'
   }
 };
